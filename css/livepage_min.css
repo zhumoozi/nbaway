@@ -1,0 +1,118 @@
+@font-face {
+	font-family:"Lato";src:url("fonts/LatoLatin-Regular.woff")
+}
+
+@font-face {
+	font-family:"Lato";src:url("fonts/LatoLatin-Bold.woff");font-weight:700
+}
+
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #eee;
+	background-color: #2c2c2c;
+	height: 100vh;
+	min-height: 100%;
+	position: relative;
+	text-align: 	center;	
+}
+
+.container {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: column;
+	-ms-flex-flow: column;
+	flex-flow: column；
+	padding-bottom: 100px;
+}
+
+.part {
+	width: 400px;
+	max-width: 100%;
+	min-height: 150px;
+	margin: 20px
+}
+
+.links {
+	padding: 20px 0 0 0;
+	font-size: 20px;
+	color: #ccc
+}
+
+.links a {
+	padding: 5px 0px 5px 0px;
+	color: #888;
+	text-decoration: none;
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	outline: 0
+}
+
+.links a:hover,a:focus {
+	color: #44b549
+}
+
+.slides-container {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row;
+	-ms-flex-flow: row;
+	flex-flow: row;
+	transition: -webkit-transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+	position: relative
+}
+
+.slide {
+	min-width: 100%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 0 70px;
+	transition: margin 0.2s ease-in-out;
+	max-width: 1000px;
+	-webkit-align-content: flex-start;
+	-ms-flex-line-pack: start;
+	align-content: flex-start
+}
+
+.diao {
+	font-size: 16px;
+	font-style: italic;
+	color: #888888;
+}
+footer {
+	position: absolute;
+	display: flex;
+	display: -webkit-flex;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	clear: both;
+	text-align: center;
+	font-size: 12px;
+	justify-content: center;
+	align-items: center;
+	color: #888888;
+	align-items: center;
+}
